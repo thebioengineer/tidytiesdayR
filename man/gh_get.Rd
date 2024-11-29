@@ -9,6 +9,8 @@ gh_get(path, auth = gh::gh_token(), ...)
 \arguments{
 \item{path}{Path within the \code{rfordatascience/tidytuesday} repo.}
 
+\item{auth}{A GitHub token. See \code{\link[gh:gh_token]{gh::gh_token()}} for more details.}
+
 \item{...}{Additional parameters passed to \code{\link[gh:gh]{gh::gh()}}.}
 }
 \value{

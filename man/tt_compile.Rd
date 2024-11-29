@@ -8,6 +8,8 @@ tt_compile(date, auth = gh::gh_token())
 }
 \arguments{
 \item{date}{date of TidyTuesday of interest}
+
+\item{auth}{A GitHub token. See \code{\link[gh:gh_token]{gh::gh_token()}} for more details.}
 }
 \description{
 Get TidyTuesday readme and list of files and HTML based on the date
