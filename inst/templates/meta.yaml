@@ -1,0 +1,18 @@
+title: "{{{title}}}"
+article:
+  title: "{{{article_title}}}"
+  url: "{{{article_url}}}"
+data_source:
+  title: "{{{source_title}}}"
+  url: "{{{source_url}}}"
+images:
+# Please include at least one image, and up to three images
+{{#images}}
+- file: "{{{image_filename}}}"
+  alt: >
+    {{{image_alt}}}
+{{/images}}
+credit:
+  {{#credits}}
+  {{attribution_type}}: "{{{attribution_text}}}"
+  {{/credits}}

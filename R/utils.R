@@ -9,6 +9,7 @@
 #'
 #' @inheritParams base::print
 #' @param x a tt_data or tt object
+#' @returns `x`, invisibly.
 #'
 #' @examplesIf interactive()
 #' tt <- tt_load_gh("2019-01-15")
@@ -22,7 +23,7 @@ NULL
 #'
 #' @param tt tt_data object for printing
 #'
-#' @return Null, invisibly. Used to show readme of the downloaded TidyTuesday
+#' @returns Null, invisibly. Used to show readme of the downloaded TidyTuesday
 #'   dataset in the Viewer.
 #' @export
 #' @examplesIf interactive()
@@ -115,4 +116,8 @@ contiguous_weeks <- function(week_vctr) {
     value = x_new,
     envir = env
   )
+}
+
+remove_caller_arg_missing <- function(x) {
+  stringr::str_remove_all(x, "(rlang::maybe_missing\\()|(\\))")
 }

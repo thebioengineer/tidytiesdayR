@@ -5,7 +5,7 @@
 #' @inheritParams shared-params
 #' @inheritParams tt_download_file
 #'
-#' @return A list of tibbles from the downloaded files.
+#' @returns A list of tibbles from the downloaded files.
 #'
 #' @export
 #' @examplesIf interactive()

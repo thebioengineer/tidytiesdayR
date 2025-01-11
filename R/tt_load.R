@@ -3,7 +3,7 @@
 #' @inheritParams shared-params
 #' @inheritParams tt_download
 #'
-#' @return `tt_data` object, which contains data that can be accessed via `$`,
+#' @returns `tt_data` object, which contains data that can be accessed via `$`,
 #'   and the readme for the week's TidyTuesday, which can be viewed by printing
 #'   the object or calling [readme()].
 #'
@@ -34,7 +34,6 @@ tt_load <- function(x,
 
 #' @rdname printing
 #' @export
-#' @return used to show readme and list names of available datasets
 print.tt_data <- function(x, ...) {
   readme(x)
   message(

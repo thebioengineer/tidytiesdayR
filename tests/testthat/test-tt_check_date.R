@@ -38,6 +38,16 @@ test_that("Invalid weeks throw errors", {
     class = "tt-error-invalid_date"
   )
   expect_error(
+    tt_check_date(2018, 7),
+    "automatically loaded",
+    class = "tt-error-invalid_date"
+  )
+  expect_error(
+    tt_check_date(2018, 8),
+    "automatically loaded",
+    class = "tt-error-invalid_date"
+  )
+  expect_error(
     tt_check_date(2020, 1),
     "data available for download",
     class = "tt-error-invalid_date"

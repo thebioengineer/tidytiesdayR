@@ -6,7 +6,7 @@
 #' @inheritParams gh_get
 #' @param force force the update to occur even if the SHA matches
 #'
-#' @return The tt master file, updated if necessary.
+#' @returns The tt master file, updated if necessary.
 #' @keywords internal
 tt_master_file <- function(force = FALSE, auth = gh::gh_token()) {
   if (should_update_tt_master_file(force, auth)) {
@@ -20,7 +20,7 @@ tt_master_file <- function(force = FALSE, auth = gh::gh_token()) {
 #'
 #' @inheritParams tt_master_file
 #'
-#' @return Boolean indicating whether the master file should be updated.
+#' @returns Boolean indicating whether the master file should be updated.
 #' @keywords internal
 should_update_tt_master_file <- function(force = FALSE, auth = gh::gh_token()) {
   force ||

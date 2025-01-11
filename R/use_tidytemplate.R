@@ -1,4 +1,4 @@
-#' Call and open the tidytemplate
+#' Create and open the tidytemplate
 #'
 #' Use the tidytemplate Rmd for starting your analysis with a leg up for
 #' processing
@@ -10,8 +10,8 @@
 #'   for the template. Either date object or character string in YYYY-MM-DD
 #'   format.
 #'
-#' @return A logical vector indicating whether the file was created or modified,
-#'   invisibly.
+#' @returns A logical vector indicating whether the file was created or
+#'   modified, invisibly.
 #'
 #' @examplesIf interactive()
 #'
@@ -22,6 +22,7 @@ use_tidytemplate <- function(name = NULL,
                              open = rlang::is_interactive(),
                              refdate = today(),
                              ignore = FALSE) {
+  rlang::check_installed("usethis", "to use the tidytemplate.")
   stopifnot(valid_date(refdate))
   last_tt <- last_tuesday(refdate)
   if (is.null(name)) {
