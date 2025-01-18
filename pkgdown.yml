@@ -1,8 +1,9 @@
 pandoc: 3.1.11
 pkgdown: 2.1.1
 pkgdown_sha: ~
-articles: {}
-last_built: 2024-11-29T17:05Z
+articles:
+  curating: curating.html
+last_built: 2025-01-18T17:11Z
 urls:
   reference: https://dslc-io.github.io/tidytuesdayR/reference
   article: https://dslc-io.github.io/tidytuesdayR/articles
