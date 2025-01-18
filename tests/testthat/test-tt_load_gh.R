@@ -1,3 +1,15 @@
+test_that("tt_week_readme_html loads the proper path", {
+  local_mocked_bindings(
+    gh_get_readme_html = function(path, ...) {
+      return(path)
+    }
+  )
+  expect_identical(
+    tt_week_readme_html("2025-01-01"),
+    "data/2025/2025-01-01"
+  )
+})
+
 test_that("tt_compile lists all files for the date", {
   local_tt_master_file()
   local_tt_week_readme_html()

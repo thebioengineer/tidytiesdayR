@@ -11,7 +11,7 @@
 #' @param path Path within the `rfordatascience/tidytuesday` repo.
 #' @param ... Additional parameters passed to [gh::gh()].
 #'
-#' @return The GitHub response as parsed by [gh::gh()].
+#' @returns The GitHub response as parsed by [gh::gh()].
 #' @keywords internal
 gh_get <- function(path, auth = gh::gh_token(), ...) {
   gh::gh(

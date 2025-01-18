@@ -2,7 +2,7 @@
 % Please edit documentation in R/use_tidytemplate.R
 \name{use_tidytemplate}
 \alias{use_tidytemplate}
-\title{Call and open the tidytemplate}
+\title{Create and open the tidytemplate}
 \usage{
 use_tidytemplate(
   name = NULL,
@@ -25,8 +25,8 @@ format.}
 \item{ignore}{Should the newly created file be added to \code{.Rbuildignore}?}
 }
 \value{
-A logical vector indicating whether the file was created or modified,
-invisibly.
+A logical vector indicating whether the file was created or
+modified, invisibly.
 }
 \description{
 Use the tidytemplate Rmd for starting your analysis with a leg up for

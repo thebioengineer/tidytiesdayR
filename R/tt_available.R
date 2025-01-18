@@ -36,7 +36,7 @@ NULL
 #' @rdname tt_available
 #' @inheritParams shared-params
 #' @export
-#' @return `tt_available()` returns a `tt_dataset_table_list`, which is a
+#' @returns `tt_available()` returns a `tt_dataset_table_list`, which is a
 #' list of `tt_dataset_table`. This class has special printing methods to show
 #' the available data sets.
 tt_available <- function(auth = gh::gh_token()) {
@@ -49,7 +49,7 @@ tt_available <- function(auth = gh::gh_token()) {
 #' @rdname tt_available
 #' @inheritParams shared-params
 #' @export
-#' @return `tt_datasets()` returns a `tt_dataset_table` object. This class has
+#' @returns `tt_datasets()` returns a `tt_dataset_table` object. This class has
 #'  special printing methods to show the available datasets for the year.
 tt_datasets <- function(year, auth = gh::gh_token()) {
   tt_check_year(year, auth = auth)
@@ -73,7 +73,7 @@ tt_datasets <- function(year, auth = gh::gh_token()) {
 #' all time
 #' @inheritParams base::print
 #' @param is_interactive Whether the function is being used interactively.
-#' @return `x`, invisibly
+#' @returns `x`, invisibly
 #' @name tt_print
 #' @examplesIf interactive()
 #' # check to make sure there are requests still available

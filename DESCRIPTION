@@ -33,17 +33,27 @@ Imports:
     rvest (>= 0.3.2),
     tidyr,
     tools (>= 3.1.0),
-    usethis,
+    utils,
     xml2 (>= 1.2.0)
 Suggests: 
+    base64enc,
     covr,
-    pkgdown,
+    dplyr,
+    fs,
+    knitr,
     readxl (>= 1.0.0),
+    rmarkdown,
     rstudioapi (>= 0.2),
     stringr,
     testthat (>= 3.0.0),
     tibble,
-    withr
+    usethis,
+    vctrs,
+    withr,
+    yaml
+VignetteBuilder: 
+    knitr
+Config/Needs/website: pkgdown
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-US

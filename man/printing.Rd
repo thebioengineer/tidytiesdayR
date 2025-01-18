@@ -16,8 +16,6 @@
 \item{...}{further arguments passed to or from other methods.}
 }
 \value{
-used to show readme and list names of available datasets
-
 \code{x}, invisibly.
 }
 \description{

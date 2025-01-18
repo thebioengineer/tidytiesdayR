@@ -6,7 +6,7 @@
 #' @inheritParams gh_get
 #' @inheritParams shared-params
 #'
-#' @return A `tt` object. This contains the files available for the week,
+#' @returns A `tt` object. This contains the files available for the week,
 #'  readme html, and the date of the TidyTuesday.
 #' @export
 #' @examplesIf interactive()
@@ -73,7 +73,6 @@ tt_week_readme_html <- function(date, auth = gh::gh_token()) {
 
 #' @rdname printing
 #' @export
-#' @return `x`, invisibly.
 print.tt <- function(x, ...) {
   message(
     "Available datasets in this TidyTuesday:\n\t",

@@ -6,10 +6,14 @@
 \arguments{
 \item{auth}{A GitHub token. See \code{\link[gh:gh_token]{gh::gh_token()}} for more details.}
 
-\item{tt}{A \code{tt} object, output from \code{\link[=tt_load_gh]{tt_load_gh()}}.}
-
 \item{files}{Which file names to download. Default "All" downloads all files
 for the specified week.}
+
+\item{path}{The relative path to the directory to hold your submission files
+(\code{tt_submission} by default). If this directory does not exist, it will be
+created.}
+
+\item{tt}{A \code{tt} object, output from \code{\link[=tt_load_gh]{tt_load_gh()}}.}
 
 \item{week}{Which week number to use within a given year. Only used when \code{x}
 is a valid year.}

@@ -7,7 +7,7 @@
 #' @param ... Additional parameters to pass to the parsing functions. Note:
 #'   These arguments will be passed for all filetypes.
 #'
-#' @return tibble containing the contents of the file downloaded from git
+#' @returns tibble containing the contents of the file downloaded from git
 #' @export
 #'
 #' @family tt_download_file
